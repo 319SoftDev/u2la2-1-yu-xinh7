@@ -1,10 +1,16 @@
 console.log("script running");
 
-const appleButton = document.querySelector("#banana");
+// creating a variable, setting it equal to the id=apple
+//  part 1, the who
+const appleButton = document.querySelector("#apple");
+const shoppingList = document.querySelector("#shopping-cart");
 
 console.log(appleButton);
 
+// part 2, the what
 const addApple = () => {
-  alert("apple button under construction");
+ shoppingList.innerHTML += '<p>Apple<p>';
 };
+
+// part 3, the when
 appleButton.addEventListener("click", addApple);
